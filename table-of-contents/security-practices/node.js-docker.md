@@ -73,7 +73,7 @@ RUN npm install
 CMD "npm" "start"
 ```
 
-### 2) Install only production dependencies in the Node.js Docker image[¶](https://cheatsheetseries.owasp.org/cheatsheets/NodeJS_Docker_Cheat_Sheet.html#2-install-only-production-dependencies-in-the-nodejs-docker-image) <a href="#id-2-install-only-production-dependencies-in-the-nodejs-docker-image" id="id-2-install-only-production-dependencies-in-the-nodejs-docker-image"></a>
+### 2) Install only production dependencies in the Node.js Docker image <a href="#id-2-install-only-production-dependencies-in-the-nodejs-docker-image" id="id-2-install-only-production-dependencies-in-the-nodejs-docker-image"></a>
 
 The following Dockerfile directive installs all dependencies in the container, including `devDependencies`, which aren’t needed for a functional application to work. It adds an unneeded security risk from packages used as development dependencies, as well as inflating the image size unnecessarily.
 
